@@ -18,18 +18,30 @@ class Announcement extends StatelessWidget {
           margin: EdgeInsets.only(bottom: 5),
           color: Colors.white,
           width: size.width * 1.0,
-          height: size.width * 0.2,
+          height: size.width * 0.3,
           child: Center(
-              child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
-              Icon(Icons.file_copy_outlined),
-              SizedBox(
-                width: 10,
+              child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  Icon(Icons.file_copy_outlined),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Expanded(
+                      child: Text(
+                          'Complimentary Counselling Sessions for All Employees!')),
+                ],
               ),
-              Expanded(
-                  child: Text(
-                      'Complimentary Counselling Sessions for All Employees!')),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                height: 20,
+                width: 200,
+                child: Text('9/29/2021 2:24:40 PM'),
+              )
             ],
           )),
         ));
