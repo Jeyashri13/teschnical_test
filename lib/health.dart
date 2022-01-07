@@ -10,7 +10,7 @@ class Health extends StatelessWidget {
       backgroundColor: Colors.grey,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Text('Memo', style: TextStyle(color: Colors.black)),
+        title: Text('TG Health Info', style: TextStyle(color: Colors.black)),
         centerTitle: true,
       ),
       body: Container(
@@ -187,16 +187,20 @@ class Health extends StatelessWidget {
                 width: size.width * 1.0,
                 height: 200,
                 child: Center(
-                    child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    Icon(Icons.file_copy_outlined),
-                    SizedBox(
-                      width: 10,
+                    child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: const [
+                        Icon(Icons.file_copy_outlined),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Expanded(
+                            child: Text(
+                                'Panel Clinic Listing (updated on 2021.10.18)')),
+                      ],
                     ),
-                    Expanded(
-                        child: Text(
-                            'Panel Clinic Listing (updated on 2021.10.18)')),
                   ],
                 )),
               ),

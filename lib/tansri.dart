@@ -10,7 +10,8 @@ class TanSri extends StatelessWidget {
       backgroundColor: Colors.grey,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Text('Memo', style: TextStyle(color: Colors.black)),
+        title: Text('Tan Sri Food For Thoughts',
+            style: TextStyle(color: Colors.black)),
         centerTitle: true,
       ),
       body: Container(
